@@ -1,93 +1,197 @@
 <!DOCTYPE html>
-<html lang ="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>Main Page</title>
-        <link rel="shortcut icon" href="resources/favicon.ico">
-        <link rel="icon" href="resources/favicon.ico">
-        <link rel="stylesheet" href="stylesheets/mainStyle.css">
-        <link rel="stylesheet" href="stylesheets/activitiesStyle.css">
-    </head>
-    <body>
-    <header>
-        <h1>
-            <img src="./resources/headerbackground.jpg" alt="Photograph of comics land." id="headerPhoto">
-            <img src="./resources/logo.png" alt="Logo for comics land." class="logo">
-            <span class="headertext">Welcome to Comics Land</span>
-        </h1>
-        <nav>
-            <ul>
-               <li class="navList"><a href="index.html" class="navList">Home</a></li>
-	           <li class="navList"><a href="plan.html" class="navList">Plan your visit</a></li>
-	           <li class="navList"><a href="find.html" class="navList">How to find us</a></li>
-               <li class="navList"><a href="activities.html" class="navList">Activities</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-      <aside>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Main Page</title>
+    <link rel="shortcut icon" href="resources/favicon.ico">
+    <link rel="icon" href="resources/favicon.ico">
+    <link rel="stylesheet" href="stylesheets/mainStyle.css">
+    <link rel="stylesheet" href="stylesheets/activitiesStyle.css">
+</head>
+<body>
+<header>
+    <img src="./resources/headerbackground.jpg" alt="Photograph of comics land." id="headerPhoto">
+    <img src="./resources/logo.png" alt="Logo for comics land." class="logo">
+    <span class="headerText"><span class="red">Comics</span><span class="green">Land</span></span>
+    <nav>
         <ul>
-          <li><a href="#activity1">Batman Rollercoaster</a></li>
-          <li><a href="#activity2">Superman Aerotube</a></li>
-          <li><a href="#activity3">Photo with Superheroes</a></li>
-          <li><a href="#activity4">Create your own comics</a></li>
-          <li><a href="#activity5">Deadshot Lasertag</a></li>
-        </ul> 
-      </aside>
-      <section id="activity1">
+            <li class="navList"><a href="./index.html" class="navList">Home</a></li>
+            <li class="navList"><a href="./plan.html" class="navList">Plan your visit</a></li>
+            <li class="navList"><a href="./find.html" class="navList">How to find us</a></li>
+            <li class="navList"><a href="./activities.html" class="navList">Activities</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <aside id="activitiesListBlock">
+        <ul id="activitiesList">
+            <li id="activityButton1" class="activityListElement selected">Batman Rollercoaster</li>
+            <li id="activityButton2" class="activityListElement">Superman Aerotube</li>
+            <li id="activityButton3" class="activityListElement">Photo with Superheroes</li>
+            <li id="activityButton4" class="activityListElement">Create your own comics</li>
+            <li id="activityButton5" class="activityListElement">Deadshot Lasertag</li>
+        </ul>
+    </aside>
+    <section id="activity1" class="activityShortDesc">
         <h2 class="activityHeader">Fly with Batman through Gotham City!</h2>
         <img src="./resources/rollercoaster.jpg" alt="Image of Gotham rollercoaster" class="activityPhoto">
         <p class="mainText">This is very fun and exciting!</p>
-        <a href="batman.html"><strong>More Info &amp; Buy Tickets</strong></a>
-        <section>
-          <h5>Location: </h5>
-          <address>Park Zone 1</address>
+        <a href="batman.html" class="activityDetailsLink"><strong>More Info &amp; Buy Tickets</strong></a>
+        <section class="location">
+            <h5>Location: </h5>
+            <address>Park Zone 1</address>
         </section>
-      </section>
-      <section id="activity2">
+    </section>
+    <section id="activity2" class="hidden activityShortDesc">
         <h2 class="activityHeader">Superman Aerotube</h2>
         <img src="./resources/aerotube.jpeg" alt="Image of Superman Aerotube" class="activityPhoto">
         <p class="mainText">Superfun with Superman!</p>
-        <a href="#"><strong>More Info &amp; Buy Tickets</strong></a>
-        <section>
-          <h5>Location: </h5>
-          <address>Park Zone 2</address>
+        <a href="#" class="activityDetailsLink"><strong>More Info &amp; Buy Tickets</strong></a>
+        <section class="location">
+            <h5>Location: </h5>
+            <address>Park Zone 2</address>
         </section>
-      </section>
-      <section id="activity3">
+    </section>
+    <section id="activity3" class="hidden activityShortDesc">
         <h2 class="activityHeader">Photo with Superheroes</h2>
         <img src="./resources/photo_with_superheroes.jpeg" alt="Image of Photo with Superheroes" class="activityPhoto">
         <p class="mainText">Be a superhero yourself, with our super photo store!</p>
-        <a href="#"><strong>More Info &amp; Buy Tickets</strong></a>
-        <section>
-          <h5>Location: </h5>
-          <address>Park Zone 3</address>
+        <a href="#" class="activityDetailsLink"><strong>More Info &amp; Buy Tickets</strong></a>
+        <section class="location">
+            <h5>Location: </h5>
+            <address>Park Zone 3</address>
         </section>
-      </section>
-      <section id="activity4">
+    </section>
+    <section id="activity4" class="hidden activityShortDesc">
         <h2 class="activityHeader">Create your own comics</h2>
         <img src="./resources/workshop.png" alt="Image of Workshop" class="activityPhoto">
         <p class="mainText">Now you decide what happens!</p>
-        <a href="#"><strong>More Info &amp; Buy Tickets</strong></a>
-        <section>
-          <h5>Location: </h5>
-          <address>Park Zone 4</address>
+        <a href="#" class="activityDetailsLink"><strong>More Info &amp; Buy Tickets</strong></a>
+        <section class="location">
+            <h5>Location: </h5>
+            <address>Park Zone 4</address>
         </section>
-      </section>
-      <section id="activity5">
+    </section>
+    <section id="activity5" class="hidden activityShortDesc">
         <h2 class="activityHeader">Deadshot Lasertag</h2>
         <img src="./resources/lasertag.jpeg" alt="Image of Lasertag" class="activityPhoto">
         <p class="mainText">Shoot or be shot, those are the rules!</p>
-        <a href="#"><strong>More Info &amp; Buy Tickets</strong></a>
-        <section>
-          <h5>Location: </h5>
-          <address>Park Zone 5</address>
+        <a href="#" class="activityDetailsLink"><strong>More Info &amp; Buy Tickets</strong></a>
+        <section class="location">
+            <h5>Location: </h5>
+            <address>Park Zone 5</address>
         </section>
-      </section>
-    </main>
-    <footer>
-      <span id="copyrightInfo">Copyright Comics Land Inc.</span>
-      <span id="contactInfo">Contact: +1 234 567 89</span>
-    </footer>
-  </body>
+    </section>
+</main>
+<footer>
+    <span id="copyrightInfo">Copyright Comics Land Inc.</span>
+    <span id="contactInfo">Contact: +1 234 567 89</span>
+</footer>
+<script>
+    function isHidden(elementId) {
+        return document.getElementById(elementId).classList.contains('hidden');
+    }
+    function show(elementId) {
+        document.getElementById(elementId).classList.remove('hidden');
+    }
+    function hide(elementId) {
+        document.getElementById(elementId).classList.add('hidden');
+    }
+
+    function isSelected(elementId) {
+        return document.getElementById(elementId).classList.contains('selected');
+    }
+    function select(elementId) {
+        document.getElementById(elementId).classList.add('selected');
+    }
+    function deselect(elementId) {
+        document.getElementById(elementId).classList.remove('selected');
+    }
+
+    document.getElementById("activityButton1").onclick = () => {
+        if (isHidden("activity1")) {
+            show("activity1");
+            hide("activity2");
+            hide("activity3");
+            hide("activity4");
+            hide("activity5");
+        }
+        if (!isSelected("activityButton1")) {
+            select("activityButton1");
+            deselect("activityButton2");
+            deselect("activityButton3");
+            deselect("activityButton4");
+            deselect("activityButton5");
+        }
+    };
+
+    document.getElementById("activityButton2").onclick = () => {
+        if (isHidden("activity2")) {
+            hide("activity1");
+            show("activity2");
+            hide("activity3");
+            hide("activity4");
+            hide("activity5");
+        }
+        if (!isSelected("activityButton2")) {
+            deselect("activityButton1");
+            select("activityButton2");
+            deselect("activityButton3");
+            deselect("activityButton4");
+            deselect("activityButton5");
+        }
+    };
+
+    document.getElementById("activityButton3").onclick = () => {
+        if (isHidden("activity3")) {
+            hide("activity1");
+            hide("activity2");
+            show("activity3");
+            hide("activity4");
+            hide("activity5");
+        }
+        if (!isSelected("activityButton3")) {
+            deselect("activityButton1");
+            deselect("activityButton2");
+            select("activityButton3");
+            deselect("activityButton4");
+            deselect("activityButton5");
+        }
+    };
+
+    document.getElementById("activityButton4").onclick = () => {
+        if (isHidden("activity4")) {
+            hide("activity1");
+            hide("activity2");
+            hide("activity3");
+            show("activity4");
+            hide("activity5");
+        }
+        if (!isSelected("activityButton4")) {
+            deselect("activityButton1");
+            deselect("activityButton2");
+            deselect("activityButton3");
+            select("activityButton4");
+            deselect("activityButton5");
+        }
+    };
+
+    document.getElementById("activityButton5").onclick = () => {
+        if (isHidden("activity5")) {
+            hide("activity1");
+            hide("activity2");
+            hide("activity3");
+            hide("activity4");
+            show("activity5");
+        }
+        if (!isSelected("activityButton5")) {
+            deselect("activityButton1");
+            deselect("activityButton2");
+            deselect("activityButton3");
+            deselect("activityButton4");
+            select("activityButton5");
+        }
+    };
+</script>
+</body>
 </html>

@@ -1,0 +1,67 @@
+main {
+    flex-direction: row;
+    display: inline-block;
+    vertical-align: top; /* here */
+}
+
+#activitiesList {
+    list-style-type: none;
+}
+
+#activitiesListBlock {
+    float: left;
+    width: 20%;
+
+}
+
+.activityListElement {
+    border: 3px dotted rgb(100, 149, 237);
+    border-radius: 10px;
+    background-color: rgb(222, 184, 135);
+    margin: 5%;
+    padding: 10%;
+}
+
+.selected {
+    background-color: rgb(188, 143, 143);
+}
+
+.activityListElement:hover {
+    background-color: rgb(244, 164,  96);
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}
+
+.activityShortDesc {
+    float: right;
+    width: 80%;
+}
+
+.activityPhoto {
+    width: 50%;
+    height: 50%;
+}
+
+.mainText {
+    font-style: italic;
+}
+
+.activityDetailsLink {
+    color: rgb(205, 92, 92);
+}
+
+.location {
+    margin-top: 1%;
+}
+
+.location h5 {
+    display: inline;
+    font-size: medium;
+}
+
+address {
+    display: inline;
+}
