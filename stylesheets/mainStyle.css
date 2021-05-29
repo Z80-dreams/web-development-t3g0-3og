@@ -1,0 +1,148 @@
+/* Import a comic book looking font */
+@font-face {
+    font-family: 'comiclandFont';
+    src: url('../resources/BadaBoomBB.woff2');
+}
+
+
+/* Style for entire page */
+body {
+    margin: 0;
+    max-width: 100%;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #444;
+}
+
+/* Styles for the header */
+header {
+    background: #FFF;
+}
+
+
+header #headerPhoto {
+    width: 100%;
+    max-width: 1260px;
+}
+
+header .logo {
+    width:  min(4vw, 3em);
+    position: absolute;
+    top: 2vh;
+    left: max(2px, calc(50vw - 630px));
+}
+
+header .headerText {
+    font-family: comiclandFont, sans-serif;
+    font-size: min(8vw, 6em);
+    position: absolute;
+    top: 1vh;
+    left: max(6vw, calc(50vw - 6em));
+}
+
+header .red {
+    color: #a32838;
+}
+
+header .green {
+    color: #28a34a;
+}
+
+
+/* Styles for the main navbar */
+nav {
+    margin: 0;
+    padding: 0;
+    height: auto;
+}
+
+nav > ul {
+    margin: 0;
+    padding: 0;
+}
+
+nav > ul .navList {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    position: relative;
+    top: -2px;
+}
+nav > ul > li .navList {
+    padding: 1em;
+    margin: 0;
+    width: calc(100% - 2em);
+    border: solid 2px #20813a;
+    border-width: 1px 0;
+    background: #28a34a;
+    color: #FFF;
+    border-radius: 0;
+    font-family: Helvetica, sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+nav > ul > li .navList:hover {
+    border-color: #7f1f2c;
+    background: #a32838;
+}
+
+@media only screen and (min-width: 768px) {
+    nav {
+	margin-left: min(4vw, 4em);
+    }
+    nav > ul .navList {
+	display: inline;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	margin: 0;
+	padding: 0;
+	position: relative;
+	top: calc(12px - 2em);
+    }
+    
+    nav > ul > li .navList {
+	margin: 0px 2px;
+	border-radius: 25px 25px 0 0;
+	width: auto;
+	border: dashed 2px #20813a;
+	border-bottom: 0;
+    }
+
+}
+
+
+/* Styles for the footer */
+footer {
+    width: calc(1260px - 1em - 4px);
+    max-width: calc(100vw - 1em - 4px);
+    background: #28a34a;
+    color: #FFF;
+    font-family: Helvetica, sans-serif;
+    font-weight: bold;
+    padding: 0.5em;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #20813a;
+}
+
+footer #contactInfo {
+    margin-top: 0.3em;
+}
+
+footer #copyrightInfo {
+    margin-top: 0.6em;
+    font-weight: normal;
+}
+
+@media only screen and (min-width: 768px) {
+    footer {
+	border: dashed 2px #20813a;
+    }
+
+}
+
+

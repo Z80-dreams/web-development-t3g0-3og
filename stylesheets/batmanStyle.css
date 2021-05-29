@@ -1,0 +1,36 @@
+ 
+/* Styles for main */
+main {
+    width: 1260px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #FFF
+}
+
+main .mainHeader {
+    font-family: comiclandFont;
+    font-size: 2em;
+    margin: 0.5em 0;
+    padding: 0 1em;   
+}
+
+main .mainPhoto {
+    max-width: min(500px, 100vw);
+    border-radius: 25px;	     
+}
+
+main .mainText {
+    font-family: Helvetica, sans-serif;
+    max-width: min(700px, 100vw);
+}
+
+main a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #555;
+}
+
+main a:hover {
+    color: #20813a;
+}
