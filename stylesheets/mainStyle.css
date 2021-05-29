@@ -101,7 +101,7 @@ nav > ul > li .navList:hover {
 	margin: 0;
 	padding: 0;
 	position: relative;
-	top: calc(12px - 2em);
+	top: calc(13px - 2em);
     }
     
     nav > ul > li .navList {
