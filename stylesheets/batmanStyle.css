@@ -34,18 +34,3 @@ main a {
 main a:hover {
     color: #20813a;
 }
-
-
-.taco_container {
-  width: 300px;
-  height: 300px;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  margin-left: auto;
-  margin-right: auto;
-}
-.img_class{width:33%;
-    float:left;
-    height:auto;
-}

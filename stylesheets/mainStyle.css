@@ -145,23 +145,60 @@ footer #copyrightInfo {
 
 }
 
-.taco_container {
-    width: 100%;
+/* Setup user color and gradient */
+:root {
+    --rainbow: repeating-linear-gradient(
+            -45deg,
+            hsl(335, 100%, 35%),
+            hsl(270, 50%, 40%),
+            hsl(200, 70%, 40%),
+            hsl(150, 65%, 35%),
+            hsl(200, 70%, 40%),
+            hsl(270, 50%, 40%),
+            hsl(335, 100%, 35%) 50%
+    );
 }
-.taco {
-    width: 33%;
-    display: inline-block;
-    text-align: center;
-}
-.center {
-  text-align: center;
-  border: 3px solid green;
+/* Setup font */
+:root {
+/*    max-width: 100%;*/
+/*    max-width: 1260px;*/
+    font: 100% Helvetica, "Segoe UI", Roboto, sans-serif;
+/*    align-items: center;*/
 }
 
+/* Setup header gradient background */
+header {
+    background: var(--rainbow);
+}
 
-#footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 2.5rem;            /* Footer height */
+/* Remove header margin and padding */
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+}
+
+/* Body backgroudn*/
+
+/*body {*/
+/*    flex: 1;*/
+/*    background: hsla(0,0%,100%,.9);*/
+/*    display: inline;*/
+/*}*/
+
+
+/* Styles for image*/
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Styles for main */
+main h2 {
+    font-size: 300%;
+    margin: .5em 0;
+    color: hsl(270, 50%, 40%);
+}
+/* Paragraph font size in id=fp_introduction */
+#fp_introduction > p{
+    font-size: 200%;
 }
