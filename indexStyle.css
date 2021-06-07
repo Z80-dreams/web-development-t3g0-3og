@@ -1,0 +1,50 @@
+@import url("mainStyle.css");
+
+:root {
+	--c1: hsl(335, 100%, 35%);
+	--c2: hsl(270, 50%, 40%);
+	--c3: hsl(200, 70%, 40%);
+	--c4: hsl(150, 65%, 35%);
+	--size: 400vmin; /*Set gradient unit to 40% of viewport minimum */
+	--rainbow: repeating-linear-gradient(-45deg,
+			var(--c1), var(--c2), var(--c3), var(--c4), var(--c3), var(--c2), var(--c1) 50%);
+}
+
+:root {
+	font: 100% Helvetica Neue, Segoe UI, Roboto, sans-serif;
+}
+
+
+
+header {
+    background: var(--rainbow);
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+    padding: 0.1em;
+}
+
+
+body {
+	flex: 2;
+    align-items: center;
+}
+main h2 {
+		font-size: min(8vw, 6em);
+		margin: 0;
+		color: var(--c2);
+}
+main .mainPhoto {
+    width: calc(1260px - 1em - 4px);
+    max-width: calc(100vw - 1em - 4px);
+    border-radius: 0px;	     
+}
+#fp_introduction > p{
+    font-size: min(2vw, 1.5em);
+}
+
+#fp_description > p{
+    font-size: min(2vw, 1.5em);
+}
