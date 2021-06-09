@@ -9,7 +9,7 @@ This project is part of DM1040 - Web Development, at University of London, Golds
 
 <img src="https://avatars.githubusercontent.com/u/3588039?s=64&amp;v=4" alt="@bastrich" width="50px" height="50px"> Bastrich, Daniil [[bastrich]](/bastrich)
 
-<img src="https://avatars.githubusercontent.com/u/85625709?s=64&amp;v=4" alt="@bastrich" width="50px" height="50px"> Faisal [[mdabdulsalam]](/mdabdulsalam)
+<img src="https://avatars.githubusercontent.com/u/85625709?s=64&amp;v=4" alt="@bastrich" width="50px" height="50px"> Mohammed, Abdul Salam [[mdabdulsalam]](/mdabdulsalam)
 
 * Hassan
 
